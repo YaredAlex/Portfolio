@@ -1,0 +1,127 @@
+.section-detail-wrapper {
+}
+.section-detail {
+  /* border: 1px solid white; */
+}
+.section-detail-wrapper .max-width {
+  max-width: 1300px;
+}
+.section-detail .detail-intro {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: end;
+  margin-bottom: 20px;
+}
+.section-detail .detail-text {
+  max-width: 900px;
+}
+.section-detail p {
+  margin-bottom: 5px;
+}
+.detail-img-wrapper-mob-1 {
+  height: 80vh;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgb(243, 206, 255);
+}
+.detail-img-wrapper-mob-1.blue {
+  background-color: var(--light-blue);
+}
+.detail-img-wrapper-mob-1.purple {
+  background-color: var(--light-purple);
+}
+.detail-img-wrapper-1 {
+  height: 80vh;
+  border-radius: 20px;
+  padding: 20px;
+  overflow: hidden;
+  background-color: rgb(250, 240, 255);
+  display: grid;
+  grid-template-columns: 500px 100px 500px;
+  justify-content: center;
+}
+.detail-img-wrapper-1 img,
+.detail-img-wrapper-mob-1 img,
+.detail-img-wrapper-2 img {
+  object-fit: contain;
+}
+.detail-img-wrapper-1 .img-left {
+  margin-top: 100px;
+  min-width: 600px;
+  position: relative;
+}
+.detail-img-wrapper-1 .img-right {
+  min-width: 600px;
+}
+.tools {
+  border: 1px solid rgb(68, 68, 68);
+  border-radius: 30px;
+  padding: 5px 20px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.detail-img-wrapper-2 {
+  height: 60vh;
+  max-width: 900px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgb(160, 197, 226);
+}
+.similar-work-card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.similar-work-card {
+}
+.similar-work-card .img-wrapper {
+  height: 50vh;
+  background-color: rgb(255, 216, 216);
+  border-radius: 10px;
+  padding: 20px;
+}
+.similar-work-card .img-wrapper img {
+  object-fit: contain;
+}
+.similar-work-card .card-info {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(4, minmax(20px, 1fr));
+}
+.section-detail .btn-custom {
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgb(60, 60, 60);
+  padding: 8px;
+  border-radius: 10px;
+  height: max-content;
+  width: max-content;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .detail-img-wrapper-1 {
+    height: 60vh;
+    grid-template-columns: 200px 200px 100px;
+    justify-content: center;
+  }
+  .section-detail .detail-intro {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .detail-img-wrapper-mob-1 {
+    height: 60vh;
+  }
+  .detail-img-wrapper-1 .img-left {
+    margin-top: 100px;
+    min-width: 300px;
+    position: relative;
+  }
+  .detail-img-wrapper-1 .img-right {
+    min-width: 300px;
+  }
+  .similar-work-card-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

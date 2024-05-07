@@ -1,0 +1,171 @@
+.section-about-me {
+}
+.section-about-me .about-me-first {
+  margin-top: 40px;
+  background-color: var(--black-3);
+  padding: 50px;
+  border-radius: 20px;
+}
+.about-me-first .about-me-first-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.section-about-me .about-me-first img {
+  min-height: 70vh;
+  max-height: 70vh;
+  object-position: top;
+  filter: grayscale(1);
+}
+.section-about-me .btn-custom {
+  max-width: 300px;
+  width: 100%;
+  height: max-content;
+  /* width: max-content; */
+  padding: 10px 0px;
+  /* background-color: white; */
+}
+.about-mile-stone {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.about-mile-stone > div {
+  padding: 30px 20px;
+  border-radius: 10px;
+  background-color: var(--black-3);
+  align-self: center;
+}
+.about-quote span {
+  display: inline;
+
+  background-clip: text;
+  color: rgba(223, 223, 223, 0.221);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255),
+    rgb(240, 240, 240)
+  );
+  animation: scroll-reveal linear forwards;
+  animation-timeline: view();
+  animation-range-start: 30vh;
+  animation-range-end: 70vh;
+}
+.about-quote {
+  padding-bottom: 200px;
+}
+@keyframes scroll-reveal {
+  to {
+    background-size: 100% 100%;
+  }
+}
+
+.section-about-me .about-programs-wrapper {
+  -webkit-mask-image: linear-gradient(to left, transparent, black);
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+}
+.section-about-me .about-programs {
+  width: max-content;
+  display: flex;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.about-programs-wrapper {
+  overflow-x: hidden;
+}
+.section-about-me .about-programs > div {
+  min-width: 200px;
+  max-height: 150px;
+  background-color: var(--black-3);
+  padding: 10px;
+  border-radius: 10px;
+}
+.section-about-me .about-programs img {
+  object-fit: contain;
+}
+.why-me-card-wrapper .why-card {
+  padding: 50px;
+  padding-top: 40px;
+  padding-left: 20px;
+  max-width: 900px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  padding-right: 10px;
+  border-bottom: 1px solid rgb(50, 50, 50);
+}
+.why-me-card-wrapper .why-card:first-child {
+  padding-top: 0px;
+}
+.why-me-card-wrapper {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 40px;
+}
+.why-me-card-wrapper .why-card {
+}
+.why-card-text {
+  max-height: 0px;
+  overflow: hidden;
+  padding-top: 10px;
+  transition: all 0.3s linear;
+}
+.why-card-progress {
+  width: 8px;
+  position: relative;
+}
+@media screen and (max-width: 992px) {
+  .why-me-card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .about-me-first .about-me-first-inner {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 872px) {
+  .about-me-first .about-me-first-inner img {
+    max-height: 450px;
+    min-height: 450px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .about-me-first .about-me-first-inner img {
+    max-height: 350px;
+    min-height: 350px;
+  }
+  .section-about-me .about-me-first h1 {
+    font-size: 2.2rem;
+  }
+  .section-about-me .about-me-first {
+    margin-top: 20px;
+    padding: 15px;
+    padding-bottom: 50px;
+  }
+  .about-me-first .about-me-first-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .about-mile-stone {
+    padding: 15px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-about-me .btn-custom {
+    max-width: 100%;
+  }
+  .about-quote {
+    font-size: 2.2rem;
+    padding-bottom: 150px;
+  }
+}

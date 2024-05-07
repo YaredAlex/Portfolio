@@ -1,0 +1,22 @@
+.footer-container {
+  padding-bottom: 40px;
+  padding-top: 40px;
+  background-color: var(--black-3);
+}
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer ul li {
+  padding: 5px 5px;
+  text-align: center;
+  /* border: 1px solid white; */
+}
+.media-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.media-wrapper a {
+  border: 1px solid var(--gray-1);
+}
